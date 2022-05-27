@@ -54,3 +54,9 @@ pre {
   cursor: no-drop;
   background: rgb(25, 113, 194, 0.9);
 }
+
+@media only screen and (max-width: 600px) {
+  .p-rose {
+    width: 100% !important;
+  }
+}

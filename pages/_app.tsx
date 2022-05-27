@@ -5,7 +5,7 @@ import '../styles/prism.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="flex justify-center">
-      <div className='prose py-11 px-6 lg:prose-xl'>
+      <div className='prose py-11 px-6 p-rose sm:prose-xl'>
         <Component {...pageProps} />
       </div>
     </div>
