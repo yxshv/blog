@@ -42,7 +42,7 @@ const Comments = ({ blog }: Props) => {
 
 	async function updateComments() {
 		const colRef = collection(db, blog)
-		const q = query(colRef, orderBy("createdAt"))
+		const q = query(colRef, orderBy("createdAt", "desc"))
 
 		const cs = (await getDocs(q)).docs.map(
 			(doc) => {
