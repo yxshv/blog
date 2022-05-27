@@ -32,7 +32,7 @@ const Comments = ({ blog }: Props) => {
 		await addDoc(collection(db, blog) , {
 			name : user,
 			comment : comment,
-			createdAt : Date.now(),
+			createdAt : new Date(),
 		})
 
 		setComment("");
