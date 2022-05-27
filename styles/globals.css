@@ -1,16 +1,62 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+pre {
+  font-size: medium !important;
+  padding: 30px !important;
+  background: #2D2D2D !important;
+}
+
+.comment-name {
+  border : 2px solid #D4D4D4;
+  border-radius: 5px;
+  display: block;
+  padding: 10px 15px;
+  font-size: medium;
+  width: 15rem;
+  transition: all 300ms ease;
+  margin-bottom: 10px;
+}
+
+.comment-name:focus {
+  border: 2px solid rgba(47, 58, 178, 0.7);
+  outline: none !important;
+}
+
+.comment-c {
+  border : 2px solid #D4D4D4;
+  border-radius: 5px;
+  display: block;
+  padding: 10px 15px;
+  font-size: medium;
+  width: 100%;
+  height: 100px;
+  transition: border 300ms ease;
+  margin-bottom: 10px;
+}
+
+.comment-c:focus-visible {
+  border: 2px solid rgba(47, 58, 178, 0.7);
+  outline: none !important;
+}
+
+.comment-b {
+  background: rgb(25, 113, 194);
+  color: rgb(255, 255, 255);
+  padding: 4px 18px;
+  font-size: 17px;
+  font-weight: 600;
+  width: auto;
+  border-radius: 4px;
+}
+
+.comment-b:disabled {
+  cursor: no-drop;
+  background: rgb(25, 113, 194, 0.9);
 }
