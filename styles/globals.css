@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.comments p {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,21 +18,6 @@ pre {
   background: #2D2D2D !important;
 }
 
-.comment-name {
-  border : 2px solid #D4D4D4;
-  border-radius: 5px;
-  display: block;
-  padding: 10px 15px;
-  font-size: medium;
-  width: 15rem;
-  transition: all 300ms ease;
-  margin-bottom: 10px;
-}
-
-.comment-name:focus {
-  border: 2px solid rgba(47, 58, 178, 0.7);
-  outline: none !important;
-}
 
 .comment-c {
   border : 2px solid #D4D4D4;
@@ -41,9 +31,13 @@ pre {
   margin-bottom: 10px;
 }
 
-.comment-c:focus-visible {
+.comment-c:focus {
   border: 2px solid rgba(47, 58, 178, 0.7);
   outline: none !important;
+}
+
+.comment-c:disabled {
+  cursor: no-drop;
 }
 
 .comment-b {
