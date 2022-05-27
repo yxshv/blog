@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { db } from '../firebase-config'
-import { query, doc, addDoc, collection, getDocs, getDoc, orderBy } from "firebase/firestore" 
+import { query, doc, addDoc, collection, getDocs, getDoc, orderBy, serverTimestamp } from "firebase/firestore" 
 import Comment from "./Comment";
 import useAuth from "../hooks/useAuth";
 import {
@@ -32,7 +32,7 @@ const Comments = ({ blog }: Props) => {
 		await addDoc(collection(db, blog) , {
 			name : user,
 			comment : comment,
-			createdAt : new Date(),
+			createdAt : serverTimestamp(),
 		})
 
 		setComment("");
