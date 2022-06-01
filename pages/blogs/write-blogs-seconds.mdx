@@ -3,8 +3,8 @@ import Comments from '../../components/Comments';
 import Footer from '../../components/Footer';
 
 <Head>
-  <title>Write and deploy blogs in seconds with comments</title>
-  <meta name="description" content="Write and deploy blogs in seconds with comments" />
+  <title>Write and deploy blogs in seconds with comments support</title>
+  <meta name="description" content="Write and deploy blogs in seconds with comments support" />
 </Head>
 
 # Write and deploy blogs in seconds with comments
@@ -13,11 +13,11 @@ Tuesday, 31 May 2022
 
 ---
 
-A few days ago I wrote my first blog so I wanted a website for it. So I made one using `Next.js` and `MDX`. While making it I got an idea. What if you could just write a blog in github and it will appear automatically in a website. So I did just that. created a Github app which listens for push events and automatically updates the website, and also added comments using [`giscus`](https://giscus.app/)
+A few days ago I wrote my first blog and wanted to make website for it. So I made one using `Next.js` and `MDX`. While making it I got an idea. What if you could just write a blog in github and it will appear automatically in a website. So I did just that. created a Github app which listens for push events and automatically updates the website, and also added comments support using [`giscus`](https://giscus.app/)
 
 This blog will teach you how to set it up.
 
-First create a repository. its need to public, then go the [website](https://website.vercel.app) and log in with github. then pick the repo u created, Then install the github app, and there you go - u can see your blog here - `https://website.vercel.app/u/<github_username>`
+First create a repository. its need to public, then go the [website](https://website.vercel.app) and log in with github. then pick the repo u created, and install the app, and there you go - u can see your blog here - `https://website.vercel.app/u/<github_username>`
 
 ## Attributes
 You can add attributes like this
@@ -33,15 +33,15 @@ data:
     - image: Meta Image
 ---
 ```
-> Make sure to add `---` after the attributes and attributes are neccessary or else it will fuck up the blog
+> Make sure to add `---` after the attributes (even if there are no attributes
 
 ## Comments
 
-Now at the bottom u might see an error
+Now at the bottom of the blog u might see an error
 ```
 giscus not installed on this repository
 ```
-this is because giscus not setted up.
+this is because giscus is not setted up.
 
 First install the [`giscus`](https://github.com/apps/giscus) app then enable discussion on the repository (Settings > Scroll Down > Enable Discussion). After that go back to the blogs and You should see the comments.
 
