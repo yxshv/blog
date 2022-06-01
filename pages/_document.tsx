@@ -8,7 +8,6 @@ class MyDocument extends Document {
           <link
             rel="stylesheet"
           ></link>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </Head>
         <body>
           <Main />
