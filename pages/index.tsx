@@ -16,6 +16,11 @@ const Home: NextPage = () => {
 					url="buga-chat-first"
 					dsc="So I was learning `go` the other day. And was amazed by its channels. So decided to make something in it. Actually I thought..."
 				/>
+				<LinkPost
+					name="Write and deploy blogs in seconds with comments support"
+					url="write-blogs-seconds"
+					dsc="A few days ago I wrote my first blog and wanted to make website for it. So I made one using Next.js and MDX. While making it I got an idea..."
+				/>
 
 			</ul>
 		</div>
