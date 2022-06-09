@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 				/>
 				<LinkPost
 					name="How I made a completely Anonymous chat app with go and next.js"
-					url="buga-chat-first"
+					url="buga-chat-firsst"
 					dsc="So I was learning `go` the other day. And was amazed by its channels. So decided to make something in it. Actually I thought..."
 				/>
 
